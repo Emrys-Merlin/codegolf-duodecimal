@@ -1,5 +1,6 @@
 x=float(input())
-r='-' if x<0 else ''
+t=''
+r='-' if x<0 else t
 x=abs(x)
 if x<1:
  r+='0'
@@ -9,7 +10,6 @@ while x-n:
  x*=12
  n=int(x)
  c-=1
-t=''
 while n:
  t=([str(i) for i in range(10)]+['a','b'])[n%12]+t
  n//=12
