@@ -10,7 +10,7 @@ while x-n:
  n=int(x)
  c-=1
 while n:
- r+=([str(i) for i in range(10)]+['a','b'])[n%12]+('' if c else '.')
+ r+=([f'{i:x}' for i in range(12)])[n%12]+('' if c else '.')
  n//=12
  c+=1
 if y<0:t+='-'
