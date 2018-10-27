@@ -14,4 +14,4 @@ while n:
  n//=12
  c+=1
 if y<0:t+='-'
-print((r+t)[::-1],end='')
+print((r+t)[::-1])
