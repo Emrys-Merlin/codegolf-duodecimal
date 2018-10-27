@@ -14,5 +14,5 @@ while n:
  n//=12
  c+=1
 if y<0:
- r+='-' 
+ r+='-'
 print(r[::-1],end='')
