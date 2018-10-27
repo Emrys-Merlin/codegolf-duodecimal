@@ -1,8 +1,6 @@
 y=float(input())
-r=''
 x=abs(y)
-t=r
-if x<1:t='0'
+r=''
 c=1
 n=int(x)
 while x-n:
@@ -10,8 +8,7 @@ while x-n:
  n=int(x)
  c-=1
 while n:
- r+=f'{n%12:x}'+('' if c else '.')
- n//=12
  c+=1
-if y<0:t+='-'
-print((r+t)[::-1])
+ r='.'*(c==1)+f'{n%12:x}'+r
+ n//=12
+print('-'*(y<0)+'0'*(c==1)+r)
